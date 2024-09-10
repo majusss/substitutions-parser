@@ -1,0 +1,120 @@
+{
+  "heading": "Zastępstwa",
+  "timeRange": "Okres: 10.09.2024 (wt.) - 10.09.2024 (wt.)",
+  "tables": [
+    {
+      "time": "Dzień: 10.09.2024 (wt.)",
+      "weekdayIndex": 1,
+      "substitutions": [
+        {
+          "lesson": "1, 08:00-08:45",
+          "teacher": "Łyczakowska Dorota",
+          "branch": "4TI",
+          "subject": "Matematyka",
+          "class": "17",
+          "case": "Uczniowie przychodzą później",
+          "message": ""
+        },
+        {
+          "lesson": "1, 08:00-08:45",
+          "teacher": "Tutka Artur",
+          "branch": "1TS|2/2",
+          "subject": "Informatyka",
+          "class": "WPT",
+          "case": "Uczniowie przychodzą później",
+          "message": ""
+        },
+        {
+          "lesson": "2, 08:50-09:35",
+          "teacher": "Łyczakowska Dorota",
+          "branch": "4TI",
+          "subject": "Matematyka",
+          "class": "17",
+          "case": "Uczniowie zwolnieni do domu",
+          "message": ""
+        },
+        {
+          "lesson": "2, 08:50-09:35",
+          "teacher": "Tutka Artur",
+          "branch": "2TS|1/2",
+          "subject": "Język angielski",
+          "class": "W11",
+          "case": "Benesz Monika",
+          "message": ""
+        },
+        {
+          "lesson": "3, 09:40-10:25",
+          "teacher": "Łyczakowska Dorota",
+          "branch": "5Ti",
+          "subject": "Matematyka",
+          "class": "17",
+          "case": "Okienko dla uczniów",
+          "message": ""
+        },
+        {
+          "lesson": "3, 09:40-10:25",
+          "teacher": "Tutka Artur",
+          "branch": "2TS|2/2",
+          "subject": "Język niemiecki",
+          "class": "WPT",
+          "case": "Kulnianin Zofia",
+          "message": ""
+        },
+        {
+          "lesson": "4, 10:40-11:25",
+          "teacher": "Łyczakowska Dorota",
+          "branch": "5Ti",
+          "subject": "Matematyka",
+          "class": "17",
+          "case": "Przeniesiona",
+          "message": "wos BJ 17"
+        },
+        {
+          "lesson": "4, 10:40-11:25",
+          "teacher": "Tutka Artur",
+          "branch": "2TA|1/2",
+          "subject": "Pracownia sterowania automatyki",
+          "class": "W17",
+          "case": "Gonciarz Mateusz",
+          "message": ""
+        },
+        {
+          "lesson": "5, 11:30-12:15",
+          "teacher": "Łyczakowska Dorota",
+          "branch": "3TG",
+          "subject": "Fizyka",
+          "class": "17",
+          "case": "Przeniesiona",
+          "message": "godz.wych Fu 17"
+        },
+        {
+          "lesson": "6, 12:20-13:05",
+          "teacher": "Łyczakowska Dorota",
+          "branch": "4TP",
+          "subject": "Fizyka rozszerzona",
+          "class": "17",
+          "case": "Przeniesiona",
+          "message": "religia Gl 17"
+        },
+        {
+          "lesson": "12, 17:25-18:10",
+          "teacher": "Olchowy Anna",
+          "branch": "3BS",
+          "subject": "Fizyka",
+          "class": "",
+          "case": "Przeniesiona",
+          "message": "religia Ka 3"
+        },
+        {
+          "lesson": "13, 18:15-19:00",
+          "teacher": "Olchowy Anna",
+          "branch": "2BK",
+          "subject": "Fizyka",
+          "class": "17",
+          "case": "Uczniowie zwolnieni do domu",
+          "message": ""
+        }
+      ]
+    }
+  ]
+}

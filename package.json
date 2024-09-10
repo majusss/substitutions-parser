@@ -1,0 +1,33 @@
+{
+  "name": "@majusss/substitutions-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "dependencies": {
+    "@majusss/substitutions-parser": "github:majusss/substitutions-parser",
+    "cheerio": "^1.0.0",
+    "substitutions-parser": "github:majusss/substitutions-parser"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**/*.ts",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majusss/substitutions-parser.git"
+  },
+  "author": "Kacper Majcher <majchermajus@proton.me>",
+  "license": "MIT"
+}
