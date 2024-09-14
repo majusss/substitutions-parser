@@ -1,116 +1,233 @@
 {
   "heading": "Zastępstwa",
-  "timeRange": "Okres: 10.09.2024 (wt.) - 10.09.2024 (wt.)",
+  "timeRange": "Okres: 16.09.2024 (pon.) - 16.09.2024 (pon.)",
   "tables": [
     {
-      "time": "Dzień: 10.09.2024 (wt.)",
-      "weekdayIndex": 1,
+      "time": "Dzień: 16.09.2024 (pon.)",
+      "weekday": 0,
       "substitutions": [
         {
           "lesson": "1, 08:00-08:45",
-          "teacher": "Łyczakowska Dorota",
-          "branch": "4TI",
-          "subject": "Matematyka",
-          "class": "17",
-          "case": "Uczniowie przychodzą później",
-          "message": ""
-        },
-        {
-          "lesson": "1, 08:00-08:45",
-          "teacher": "Tutka Artur",
-          "branch": "1TS|2/2",
-          "subject": "Informatyka",
-          "class": "WPT",
-          "case": "Uczniowie przychodzą później",
+          "teacher": "Różańska Dorota",
+          "branch": "2TA|2/2",
+          "subject": "Wychowanie fizyczne",
+          "class": "G3",
+          "case": "Zastępstwo",
           "message": ""
         },
         {
           "lesson": "2, 08:50-09:35",
-          "teacher": "Łyczakowska Dorota",
-          "branch": "4TI",
-          "subject": "Matematyka",
-          "class": "17",
-          "case": "Uczniowie zwolnieni do domu",
+          "teacher": "Różańska Dorota",
+          "branch": "2TA|2/2",
+          "subject": "Wychowanie fizyczne",
+          "class": "G3",
+          "case": "Zastępstwo",
           "message": ""
         },
         {
-          "lesson": "2, 08:50-09:35",
-          "teacher": "Tutka Artur",
-          "branch": "2TS|1/2",
+          "lesson": "3, 09:40-10:25",
+          "teacher": "Lach Katarzyna",
+          "branch": "3TE|2/2",
+          "subject": "Opieka nad uczniami",
+          "class": "W18",
+          "case": "Stokłosa Elżbieta",
+          "message": ""
+        },
+        {
+          "lesson": "4, 10:40-11:25",
+          "teacher": "Benesz Monika",
+          "branch": "1TS|1/2",
           "subject": "Język angielski",
           "class": "W11",
-          "case": "Benesz Monika",
-          "message": ""
-        },
-        {
-          "lesson": "3, 09:40-10:25",
-          "teacher": "Łyczakowska Dorota",
-          "branch": "5Ti",
-          "subject": "Matematyka",
-          "class": "17",
-          "case": "Okienko dla uczniów",
-          "message": ""
-        },
-        {
-          "lesson": "3, 09:40-10:25",
-          "teacher": "Tutka Artur",
-          "branch": "2TS|2/2",
-          "subject": "Język niemiecki",
-          "class": "WPT",
-          "case": "Kulnianin Zofia",
+          "case": "Zastępstwo",
           "message": ""
         },
         {
           "lesson": "4, 10:40-11:25",
-          "teacher": "Łyczakowska Dorota",
+          "teacher": "Czerkas Magdalena",
           "branch": "5Ti",
-          "subject": "Matematyka",
-          "class": "17",
+          "subject": "Geografia",
+          "class": "16",
           "case": "Przeniesiona",
-          "message": "wos BJ 17"
+          "message": "peryf.w.ai-2/2 Oż 16"
+        },
+        {
+          "lesson": "4, 10:40-11:25",
+          "teacher": "Lach Katarzyna",
+          "branch": "3TG|2/2",
+          "subject": "Język angielski",
+          "class": "WPT",
+          "case": "Przeniesiona",
+          "message": "j.angielski-1/2 GA 36\nj.angielski-2/2 GA 36"
         },
         {
           "lesson": "4, 10:40-11:25",
           "teacher": "Tutka Artur",
-          "branch": "2TA|1/2",
-          "subject": "Pracownia sterowania automatyki",
-          "class": "W17",
-          "case": "Gonciarz Mateusz",
+          "branch": "3TG|2/2",
+          "subject": "Język angielski",
+          "class": "36",
+          "case": "Górecki Adam",
+          "message": ""
+        },
+        {
+          "lesson": "4, 10:40-11:25",
+          "teacher": "Tutka Artur",
+          "branch": "3TG|1/2",
+          "subject": "Informatyka",
+          "class": "36",
+          "case": "Przeniesiona",
+          "message": "j.angielski-1/2 GA 26\ninformatyka-2/2 Tu 26"
+        },
+        {
+          "lesson": "5, 11:30-12:15",
+          "teacher": "Benesz Monika",
+          "branch": "1TS|2/2",
+          "subject": "Język angielski",
+          "class": "W11",
+          "case": "Zastępstwo",
           "message": ""
         },
         {
           "lesson": "5, 11:30-12:15",
-          "teacher": "Łyczakowska Dorota",
-          "branch": "3TG",
-          "subject": "Fizyka",
-          "class": "17",
+          "teacher": "Bereza Jadwiga",
+          "branch": "4TS",
+          "subject": "Wiedza o społeczeństwie",
+          "class": "W15",
           "case": "Przeniesiona",
-          "message": "godz.wych Fu 17"
+          "message": "eksp.poj.sam Żo W15"
         },
         {
           "lesson": "6, 12:20-13:05",
-          "teacher": "Łyczakowska Dorota",
-          "branch": "4TP",
-          "subject": "Fizyka rozszerzona",
-          "class": "17",
+          "teacher": "Benesz Monika",
+          "branch": "1TI|t.gripolcy",
+          "subject": "Wychowanie fizyczne",
+          "class": "",
+          "case": "Guziewicz Grzegorz",
+          "message": ""
+        },
+        {
+          "lesson": "6, 12:20-13:05",
+          "teacher": "Bereza Jadwiga",
+          "branch": "5Ti",
+          "subject": "Historia",
+          "class": "W12",
+          "case": "Uczniowie zwolnieni do domu",
+          "message": ""
+        },
+        {
+          "lesson": "6, 12:20-13:05",
+          "teacher": "Lach Katarzyna",
+          "branch": "3BS",
+          "subject": "Język obcy zawodowy w branży samochodowej",
+          "class": "",
+          "case": "Uczniowie przychodzą później",
+          "message": ""
+        },
+        {
+          "lesson": "6, 12:20-13:05",
+          "teacher": "Różańska Dorota",
+          "branch": "1TS|2/2",
+          "subject": "Wychowanie fizyczne",
+          "class": "",
+          "case": "Zastępstwo",
+          "message": ""
+        },
+        {
+          "lesson": "7, 13:10-13:55",
+          "teacher": "Benesz Monika",
+          "branch": "1BK|kiermech",
+          "subject": "Opieka nad uczniami",
+          "class": "32",
+          "case": "Włoch Joanna",
+          "message": ""
+        },
+        {
+          "lesson": "7, 13:10-13:55",
+          "teacher": "Bereza Jadwiga",
+          "branch": "3BS",
+          "subject": "Historia",
+          "class": "",
+          "case": "Uczniowie przychodzą później",
+          "message": ""
+        },
+        {
+          "lesson": "7, 13:10-13:55",
+          "teacher": "Drabik Piotr",
+          "branch": "2TI|1/2",
+          "subject": "Sieciowe systemy operacyjne",
+          "class": "",
           "case": "Przeniesiona",
-          "message": "religia Gl 17"
+          "message": "proj.str.int-1/2 Wa 36"
+        },
+        {
+          "lesson": "7, 13:10-13:55",
+          "teacher": "Lach Katarzyna",
+          "branch": "2BK|elpojsam",
+          "subject": "Język angielski",
+          "class": "16",
+          "case": "Górecki Adam",
+          "message": ""
+        },
+        {
+          "lesson": "7, 13:10-13:55",
+          "teacher": "Tutka Artur",
+          "branch": "1BK|elpojsam",
+          "subject": "Opieka nad uczniami",
+          "class": "32",
+          "case": "Włoch Joanna",
+          "message": ""
+        },
+        {
+          "lesson": "8, 14:00-14:45",
+          "teacher": "Drabik Piotr",
+          "branch": "2TI|1/2",
+          "subject": "Sieciowe systemy operacyjne",
+          "class": "",
+          "case": "Przeniesiona",
+          "message": "proj.str.int-1/2 Wa 36"
+        },
+        {
+          "lesson": "8, 14:00-14:45",
+          "teacher": "Lach Katarzyna",
+          "branch": "3TT|t.automat",
+          "subject": "Język niemiecki",
+          "class": "W1",
+          "case": "Rydzik Monika",
+          "message": ""
+        },
+        {
+          "lesson": "9, 14:50-15:35",
+          "teacher": "Drabik Piotr",
+          "branch": "2TI|2/2",
+          "subject": "Sieciowe systemy operacyjne",
+          "class": "",
+          "case": "Uczniowie zwolnieni do domu",
+          "message": ""
+        },
+        {
+          "lesson": "9, 14:50-15:35",
+          "teacher": "Lach Katarzyna",
+          "branch": "3TM",
+          "subject": "Język angielski",
+          "class": "16",
+          "case": "Uczniowie zwolnieni do domu",
+          "message": ""
+        },
+        {
+          "lesson": "10, 15:40-16:25",
+          "teacher": "Drabik Piotr",
+          "branch": "2TI|2/2",
+          "subject": "Sieciowe systemy operacyjne",
+          "class": "",
+          "case": "Uczniowie zwolnieni do domu",
+          "message": ""
         },
         {
           "lesson": "12, 17:25-18:10",
-          "teacher": "Olchowy Anna",
-          "branch": "3BS",
-          "subject": "Fizyka",
-          "class": "",
-          "case": "Przeniesiona",
-          "message": "religia Ka 3"
-        },
-        {
-          "lesson": "13, 18:15-19:00",
-          "teacher": "Olchowy Anna",
-          "branch": "2BK",
-          "subject": "Fizyka",
-          "class": "17",
+          "teacher": "Drabik Piotr",
+          "branch": "3TI",
+          "subject": "Eksploatacja urządzeń sieciowych",
+          "class": "35",
           "case": "Uczniowie zwolnieni do domu",
           "message": ""
         }

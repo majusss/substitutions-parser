@@ -1,7 +1,7 @@
 import { CheerioAPI, load } from "cheerio";
 import { Substitution, SubstitutionTable } from "./types";
 
-export default class SubstitutionPage {
+export default class SubstitutionsPage {
   public $: CheerioAPI;
 
   private shortDayNames = ["pon", "wt", "śr", "czw", "pt", "sob", "nie"];
@@ -46,13 +46,13 @@ export default class SubstitutionPage {
       });
 
       const match = tableDate.match(/\([^)]*\)/i);
-      const weekdayIndex = match
+      const weekday = match
         ? this.shortDayNames.indexOf(match[0]?.substring(1)?.replace(".)", ""))
         : -1;
 
       tables.push({
         time: tableDate,
-        weekdayIndex,
+        weekday,
         substitutions,
       });
     });

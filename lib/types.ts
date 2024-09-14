@@ -10,11 +10,11 @@ export interface Substitution {
 
 export interface SubstitutionTable {
   time: string;
-  weekdayIndex: number;
+  weekday: number;
   substitutions: Substitution[];
 }
 
-export interface Substitutions {
+export interface SubstitutionsPage {
   heading: string;
   timeRange: string;
   tables: SubstitutionTable[];

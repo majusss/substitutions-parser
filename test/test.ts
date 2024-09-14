@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import SubstitutionPage from "../lib/substitutions";
+import { expect } from "chai";
 
 describe("Substitution Test", () => {
   const indexFilename = path.join(__dirname, "fixtures", "index.html");
@@ -8,7 +9,7 @@ describe("Substitution Test", () => {
     encoding: "utf8",
   });
   it("Cheerio init", () => {
-    expect(() => new SubstitutionPage(indexHTML)).not.toThrow();
+    expect(() => new SubstitutionPage(indexHTML)).to.not.throw();
   });
   const substitutions = new SubstitutionPage(indexHTML);
   it("Substitution", () => {
@@ -17,6 +18,6 @@ describe("Substitution Test", () => {
       encoding: "utf8",
     });
     const expectedValues = JSON.parse(expectedJSON);
-    expect(substitutions.parseSubstitutionSite()).toEqual(expectedValues);
+    expect(substitutions.parseSubstitutionSite()).to.equal(expectedValues);
   });
 });
