@@ -1,5 +1,5 @@
 import { CheerioAPI, load } from "cheerio";
-import { Substitution, SubstitutionTable } from "./types";
+import { LessonSubstitute, Substitution, SubstitutionTable } from "./types";
 
 export default class SubstitutionsPage {
   public $: CheerioAPI;
@@ -8,6 +8,43 @@ export default class SubstitutionsPage {
 
   public constructor(html: string) {
     this.$ = load(html);
+  }
+
+  parseLessonNumber(lesson: string): { number: number; timeRange: string } {
+    const [number, timeRange] = lesson.split(",");
+    return {
+      number: parseInt(number),
+      timeRange: timeRange.trim(),
+    };
+  }
+
+  parseSubstituts(entry: string): LessonSubstitute | null {
+    const tokens = entry.trim().split(/\s+/);
+
+    if (tokens.length < 3) {
+      return null;
+    }
+
+    const rawSubject = tokens[0];
+    const teacher = tokens[1];
+    const room = tokens[2];
+
+    const subjectRegex = /^(.+?)(?:-([\d/]+|[A-Z]))?$/;
+    const match = rawSubject.match(subjectRegex);
+
+    if (!match) {
+      return null;
+    }
+
+    const subject = match[1];
+    const groupName = match[2];
+
+    return {
+      subject,
+      teacher,
+      room,
+      ...(groupName ? { groupName } : {}),
+    };
   }
 
   public parseSubstitutionSite() {
@@ -22,25 +59,26 @@ export default class SubstitutionsPage {
 
       rows.slice(1).each((_i, row) => {
         const columns = this.$(row).find("td");
-        const [
-          lesson,
-          teacher,
-          branch,
-          subject,
-          classValue,
-          caseValue,
-          message,
-        ] = columns.map((_index, column) => this.$(column).text().trim()).get();
+        const [lesson, teacher, classValue, subject, room, caseValue, message] =
+          columns.map((_index, column) => this.$(column).text().trim()).get();
+
+        const lessonSubstitute =
+          message?.length > 0
+            ? message
+                .split("\n")
+                .map(this.parseSubstituts)
+                .filter((entry): entry is LessonSubstitute => entry !== null)
+            : [];
 
         if (lesson) {
           substitutions.push({
-            lesson,
+            ...this.parseLessonNumber(lesson),
             teacher,
-            branch,
             subject,
             class: classValue,
+            room,
             case: caseValue,
-            message,
+            ...(lessonSubstitute.length > 0 ? { lessonSubstitute } : {}),
           });
         }
       });

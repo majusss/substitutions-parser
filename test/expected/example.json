@@ -7,229 +7,288 @@
       "weekday": 0,
       "substitutions": [
         {
-          "lesson": "1, 08:00-08:45",
+          "number": 1,
+          "timeRange": "08:00-08:45",
           "teacher": "Różańska Dorota",
-          "branch": "2TA|2/2",
           "subject": "Wychowanie fizyczne",
-          "class": "G3",
-          "case": "Zastępstwo",
-          "message": ""
+          "class": "2TA|2/2",
+          "room": "G3",
+          "case": "Zastępstwo"
         },
         {
-          "lesson": "2, 08:50-09:35",
+          "number": 2,
+          "timeRange": "08:50-09:35",
           "teacher": "Różańska Dorota",
-          "branch": "2TA|2/2",
           "subject": "Wychowanie fizyczne",
-          "class": "G3",
-          "case": "Zastępstwo",
-          "message": ""
+          "class": "2TA|2/2",
+          "room": "G3",
+          "case": "Zastępstwo"
         },
         {
-          "lesson": "3, 09:40-10:25",
+          "number": 3,
+          "timeRange": "09:40-10:25",
           "teacher": "Lach Katarzyna",
-          "branch": "3TE|2/2",
           "subject": "Opieka nad uczniami",
-          "class": "W18",
-          "case": "Stokłosa Elżbieta",
-          "message": ""
+          "class": "3TE|2/2",
+          "room": "W18",
+          "case": "Stokłosa Elżbieta"
         },
         {
-          "lesson": "4, 10:40-11:25",
+          "number": 4,
+          "timeRange": "10:40-11:25",
           "teacher": "Benesz Monika",
-          "branch": "1TS|1/2",
           "subject": "Język angielski",
-          "class": "W11",
-          "case": "Zastępstwo",
-          "message": ""
+          "class": "1TS|1/2",
+          "room": "W11",
+          "case": "Zastępstwo"
         },
         {
-          "lesson": "4, 10:40-11:25",
+          "number": 4,
+          "timeRange": "10:40-11:25",
           "teacher": "Czerkas Magdalena",
-          "branch": "5Ti",
           "subject": "Geografia",
-          "class": "16",
+          "class": "5Ti",
+          "room": "16",
           "case": "Przeniesiona",
-          "message": "peryf.w.ai-2/2 Oż 16"
+          "lessonSubstitute": [
+            {
+              "subject": "peryf.w.ai",
+              "teacher": "Oż",
+              "room": "16",
+              "groupName": "2/2"
+            }
+          ]
         },
         {
-          "lesson": "4, 10:40-11:25",
+          "number": 4,
+          "timeRange": "10:40-11:25",
           "teacher": "Lach Katarzyna",
-          "branch": "3TG|2/2",
           "subject": "Język angielski",
-          "class": "WPT",
+          "class": "3TG|2/2",
+          "room": "WPT",
           "case": "Przeniesiona",
-          "message": "j.angielski-1/2 GA 36\nj.angielski-2/2 GA 36"
+          "lessonSubstitute": [
+            {
+              "subject": "j.angielski",
+              "teacher": "GA",
+              "room": "36",
+              "groupName": "1/2"
+            },
+            {
+              "subject": "j.angielski",
+              "teacher": "GA",
+              "room": "36",
+              "groupName": "2/2"
+            }
+          ]
         },
         {
-          "lesson": "4, 10:40-11:25",
+          "number": 4,
+          "timeRange": "10:40-11:25",
           "teacher": "Tutka Artur",
-          "branch": "3TG|2/2",
           "subject": "Język angielski",
-          "class": "36",
-          "case": "Górecki Adam",
-          "message": ""
+          "class": "3TG|2/2",
+          "room": "36",
+          "case": "Górecki Adam"
         },
         {
-          "lesson": "4, 10:40-11:25",
+          "number": 4,
+          "timeRange": "10:40-11:25",
           "teacher": "Tutka Artur",
-          "branch": "3TG|1/2",
           "subject": "Informatyka",
-          "class": "36",
+          "class": "3TG|1/2",
+          "room": "36",
           "case": "Przeniesiona",
-          "message": "j.angielski-1/2 GA 26\ninformatyka-2/2 Tu 26"
+          "lessonSubstitute": [
+            {
+              "subject": "j.angielski",
+              "teacher": "GA",
+              "room": "26",
+              "groupName": "1/2"
+            },
+            {
+              "subject": "informatyka",
+              "teacher": "Tu",
+              "room": "26",
+              "groupName": "2/2"
+            }
+          ]
         },
         {
-          "lesson": "5, 11:30-12:15",
+          "number": 5,
+          "timeRange": "11:30-12:15",
           "teacher": "Benesz Monika",
-          "branch": "1TS|2/2",
           "subject": "Język angielski",
-          "class": "W11",
-          "case": "Zastępstwo",
-          "message": ""
+          "class": "1TS|2/2",
+          "room": "W11",
+          "case": "Zastępstwo"
         },
         {
-          "lesson": "5, 11:30-12:15",
+          "number": 5,
+          "timeRange": "11:30-12:15",
           "teacher": "Bereza Jadwiga",
-          "branch": "4TS",
           "subject": "Wiedza o społeczeństwie",
-          "class": "W15",
+          "class": "4TS",
+          "room": "W15",
           "case": "Przeniesiona",
-          "message": "eksp.poj.sam Żo W15"
+          "lessonSubstitute": [
+            {
+              "subject": "eksp.poj.sam",
+              "teacher": "Żo",
+              "room": "W15"
+            }
+          ]
         },
         {
-          "lesson": "6, 12:20-13:05",
+          "number": 6,
+          "timeRange": "12:20-13:05",
           "teacher": "Benesz Monika",
-          "branch": "1TI|t.gripolcy",
           "subject": "Wychowanie fizyczne",
-          "class": "",
-          "case": "Guziewicz Grzegorz",
-          "message": ""
+          "class": "1TI|t.gripolcy",
+          "room": "",
+          "case": "Guziewicz Grzegorz"
         },
         {
-          "lesson": "6, 12:20-13:05",
+          "number": 6,
+          "timeRange": "12:20-13:05",
           "teacher": "Bereza Jadwiga",
-          "branch": "5Ti",
           "subject": "Historia",
-          "class": "W12",
-          "case": "Uczniowie zwolnieni do domu",
-          "message": ""
+          "class": "5Ti",
+          "room": "W12",
+          "case": "Uczniowie zwolnieni do domu"
         },
         {
-          "lesson": "6, 12:20-13:05",
+          "number": 6,
+          "timeRange": "12:20-13:05",
           "teacher": "Lach Katarzyna",
-          "branch": "3BS",
           "subject": "Język obcy zawodowy w branży samochodowej",
-          "class": "",
-          "case": "Uczniowie przychodzą później",
-          "message": ""
+          "class": "3BS",
+          "room": "",
+          "case": "Uczniowie przychodzą później"
         },
         {
-          "lesson": "6, 12:20-13:05",
+          "number": 6,
+          "timeRange": "12:20-13:05",
           "teacher": "Różańska Dorota",
-          "branch": "1TS|2/2",
           "subject": "Wychowanie fizyczne",
-          "class": "",
-          "case": "Zastępstwo",
-          "message": ""
+          "class": "1TS|2/2",
+          "room": "",
+          "case": "Zastępstwo"
         },
         {
-          "lesson": "7, 13:10-13:55",
+          "number": 7,
+          "timeRange": "13:10-13:55",
           "teacher": "Benesz Monika",
-          "branch": "1BK|kiermech",
           "subject": "Opieka nad uczniami",
-          "class": "32",
-          "case": "Włoch Joanna",
-          "message": ""
+          "class": "1BK|kiermech",
+          "room": "32",
+          "case": "Włoch Joanna"
         },
         {
-          "lesson": "7, 13:10-13:55",
+          "number": 7,
+          "timeRange": "13:10-13:55",
           "teacher": "Bereza Jadwiga",
-          "branch": "3BS",
           "subject": "Historia",
-          "class": "",
-          "case": "Uczniowie przychodzą później",
-          "message": ""
+          "class": "3BS",
+          "room": "",
+          "case": "Uczniowie przychodzą później"
         },
         {
-          "lesson": "7, 13:10-13:55",
+          "number": 7,
+          "timeRange": "13:10-13:55",
           "teacher": "Drabik Piotr",
-          "branch": "2TI|1/2",
           "subject": "Sieciowe systemy operacyjne",
-          "class": "",
+          "class": "2TI|1/2",
+          "room": "",
           "case": "Przeniesiona",
-          "message": "proj.str.int-1/2 Wa 36"
+          "lessonSubstitute": [
+            {
+              "subject": "proj.str.int",
+              "teacher": "Wa",
+              "room": "36",
+              "groupName": "1/2"
+            }
+          ]
         },
         {
-          "lesson": "7, 13:10-13:55",
+          "number": 7,
+          "timeRange": "13:10-13:55",
           "teacher": "Lach Katarzyna",
-          "branch": "2BK|elpojsam",
           "subject": "Język angielski",
-          "class": "16",
-          "case": "Górecki Adam",
-          "message": ""
+          "class": "2BK|elpojsam",
+          "room": "16",
+          "case": "Górecki Adam"
         },
         {
-          "lesson": "7, 13:10-13:55",
+          "number": 7,
+          "timeRange": "13:10-13:55",
           "teacher": "Tutka Artur",
-          "branch": "1BK|elpojsam",
           "subject": "Opieka nad uczniami",
-          "class": "32",
-          "case": "Włoch Joanna",
-          "message": ""
+          "class": "1BK|elpojsam",
+          "room": "32",
+          "case": "Włoch Joanna"
         },
         {
-          "lesson": "8, 14:00-14:45",
+          "number": 8,
+          "timeRange": "14:00-14:45",
           "teacher": "Drabik Piotr",
-          "branch": "2TI|1/2",
           "subject": "Sieciowe systemy operacyjne",
-          "class": "",
+          "class": "2TI|1/2",
+          "room": "",
           "case": "Przeniesiona",
-          "message": "proj.str.int-1/2 Wa 36"
+          "lessonSubstitute": [
+            {
+              "subject": "proj.str.int",
+              "teacher": "Wa",
+              "room": "36",
+              "groupName": "1/2"
+            }
+          ]
         },
         {
-          "lesson": "8, 14:00-14:45",
+          "number": 8,
+          "timeRange": "14:00-14:45",
           "teacher": "Lach Katarzyna",
-          "branch": "3TT|t.automat",
           "subject": "Język niemiecki",
-          "class": "W1",
-          "case": "Rydzik Monika",
-          "message": ""
+          "class": "3TT|t.automat",
+          "room": "W1",
+          "case": "Rydzik Monika"
         },
         {
-          "lesson": "9, 14:50-15:35",
+          "number": 9,
+          "timeRange": "14:50-15:35",
           "teacher": "Drabik Piotr",
-          "branch": "2TI|2/2",
           "subject": "Sieciowe systemy operacyjne",
-          "class": "",
-          "case": "Uczniowie zwolnieni do domu",
-          "message": ""
+          "class": "2TI|2/2",
+          "room": "",
+          "case": "Uczniowie zwolnieni do domu"
         },
         {
-          "lesson": "9, 14:50-15:35",
+          "number": 9,
+          "timeRange": "14:50-15:35",
           "teacher": "Lach Katarzyna",
-          "branch": "3TM",
           "subject": "Język angielski",
-          "class": "16",
-          "case": "Uczniowie zwolnieni do domu",
-          "message": ""
+          "class": "3TM",
+          "room": "16",
+          "case": "Uczniowie zwolnieni do domu"
         },
         {
-          "lesson": "10, 15:40-16:25",
+          "number": 10,
+          "timeRange": "15:40-16:25",
           "teacher": "Drabik Piotr",
-          "branch": "2TI|2/2",
           "subject": "Sieciowe systemy operacyjne",
-          "class": "",
-          "case": "Uczniowie zwolnieni do domu",
-          "message": ""
+          "class": "2TI|2/2",
+          "room": "",
+          "case": "Uczniowie zwolnieni do domu"
         },
         {
-          "lesson": "12, 17:25-18:10",
+          "number": 12,
+          "timeRange": "17:25-18:10",
           "teacher": "Drabik Piotr",
-          "branch": "3TI",
           "subject": "Eksploatacja urządzeń sieciowych",
-          "class": "35",
-          "case": "Uczniowie zwolnieni do domu",
-          "message": ""
+          "class": "3TI",
+          "room": "35",
+          "case": "Uczniowie zwolnieni do domu"
         }
       ]
     }

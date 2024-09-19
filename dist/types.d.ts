@@ -1,11 +1,18 @@
-export interface Substitution {
-    lesson: string;
-    teacher: string;
-    branch: string;
+export interface LessonSubstitute {
     subject: string;
+    room: string;
+    groupName?: string;
+    teacher: string;
+}
+export interface Substitution {
+    number: number;
+    timeRange: string;
+    teacher: string;
     class: string;
+    subject: string;
+    room: string;
     case: string;
-    message: string;
+    lessonSubstitute?: LessonSubstitute[];
 }
 export interface SubstitutionTable {
     time: string;

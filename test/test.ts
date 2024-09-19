@@ -18,6 +18,6 @@ describe("Substitution Test", () => {
       encoding: "utf8",
     });
     const expectedValues = JSON.parse(expectedJSON);
-    expect(substitutions.parseSubstitutionSite()).to.equal(expectedValues);
+    expect(substitutions.parseSubstitutionSite()).to.deep.equal(expectedValues);
   });
 });
