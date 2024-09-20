@@ -1,17 +1,10 @@
 import { CheerioAPI } from "cheerio";
-import { LessonSubstitute, SubstitutionTable } from "./types";
-export default class SubstitutionsPage {
+import { SubstitutionsPage } from "./types";
+export default class Substitutions {
     $: CheerioAPI;
     private shortDayNames;
     constructor(html: string);
-    parseLessonNumber(lesson: string): {
-        number: number;
-        timeRange: string;
-    };
-    parseSubstituts(entry: string): LessonSubstitute | null;
-    parseSubstitutionSite(): {
-        heading: string;
-        timeRange: string;
-        tables: SubstitutionTable[];
-    };
+    private parseLessonNumber;
+    private parseSubstituts;
+    parseSubstitutionSite(): SubstitutionsPage;
 }

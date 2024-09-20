@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const cheerio_1 = require("cheerio");
-class SubstitutionsPage {
+class Substitutions {
     constructor(html) {
         this.shortDayNames = ["pon", "wt", "śr", "czw", "pt", "sob", "nie"];
         this.$ = (0, cheerio_1.load)(html);
@@ -82,4 +82,4 @@ class SubstitutionsPage {
         };
     }
 }
-exports.default = SubstitutionsPage;
+exports.default = Substitutions;

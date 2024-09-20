@@ -1,7 +1,12 @@
 import { CheerioAPI, load } from "cheerio";
-import { LessonSubstitute, Substitution, SubstitutionTable } from "./types";
+import {
+  LessonSubstitute,
+  Substitution,
+  SubstitutionsPage,
+  SubstitutionTable,
+} from "./types";
 
-export default class SubstitutionsPage {
+export default class Substitutions {
   public $: CheerioAPI;
 
   private shortDayNames = ["pon", "wt", "śr", "czw", "pt", "sob", "nie"];
@@ -10,7 +15,10 @@ export default class SubstitutionsPage {
     this.$ = load(html);
   }
 
-  parseLessonNumber(lesson: string): { number: number; timeRange: string } {
+  private parseLessonNumber(lesson: string): {
+    number: number;
+    timeRange: string;
+  } {
     const [number, timeRange] = lesson.split(",");
     return {
       number: parseInt(number),
@@ -18,7 +26,7 @@ export default class SubstitutionsPage {
     };
   }
 
-  parseSubstituts(entry: string): LessonSubstitute | null {
+  private parseSubstituts(entry: string): LessonSubstitute | null {
     const tokens = entry.trim().split(/\s+/);
 
     if (tokens.length < 3) {
@@ -47,7 +55,7 @@ export default class SubstitutionsPage {
     };
   }
 
-  public parseSubstitutionSite() {
+  public parseSubstitutionSite(): SubstitutionsPage {
     const timeRange = this.$("h2").text().trim();
     const heading = this.$("h1").text().trim();
     const tables: SubstitutionTable[] = [];
