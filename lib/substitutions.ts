@@ -27,15 +27,13 @@ export default class Substitutions {
   }
 
   private parseSubstituts(entry: string): LessonSubstitute | null {
-    const tokens = entry.trim().split(/\s+/);
+    const parts = entry.trim().split(/\s+/);
+    const [room, teacher] = [parts.pop() || "", parts.pop() || ""];
+    const rawSubject = entry.slice(0, entry.lastIndexOf(teacher)).trim();
 
-    if (tokens.length < 3) {
+    if (!rawSubject || !teacher || !room) {
       return null;
     }
-
-    const rawSubject = tokens[0];
-    const teacher = tokens[1];
-    const room = tokens[2];
 
     const subjectRegex = /^(.+?)(?:-([\d/]+|[A-Z]))?$/;
     const match = rawSubject.match(subjectRegex);
