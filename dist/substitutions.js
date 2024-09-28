@@ -14,23 +14,44 @@ class Substitutions {
         };
     }
     parseSubstituts(entry) {
-        const tokens = entry.trim().split(/\s+/);
-        if (tokens.length < 3) {
-            return null;
+        const parts = entry.trim().split(/\s+/);
+        let subjectWords = [];
+        let teacher = null;
+        let room = null;
+        let groupName;
+        let match;
+        const teacherRegex = /^\p{Lu}\p{L}$/u;
+        const roomRegex = /^(?:3[0-7]|[3-9]|[12][0-9]|W.*|G.*|WG.*)$/;
+        const groupNameRegex = /^-([\d/]+|[A-Z])$|^(\d+[A-Za-z]+)$/;
+        for (const word of parts) {
+            if (!teacher && teacherRegex.test(word)) {
+                teacher = word;
+            }
+            else if (!room && roomRegex.test(word)) {
+                room = word;
+            }
+            else if (!groupName && (match = word.match(groupNameRegex))) {
+                groupName = match[1] || match[2];
+            }
+            else {
+                subjectWords.push(word);
+            }
         }
-        const rawSubject = tokens[0];
-        const teacher = tokens[1];
-        const room = tokens[2];
+        let subject = subjectWords.join(" ");
         const subjectRegex = /^(.+?)(?:-([\d/]+|[A-Z]))?$/;
-        const match = rawSubject.match(subjectRegex);
-        if (!match) {
+        match = subject.match(subjectRegex);
+        if (match) {
+            subject = match[1].trim();
+            if (!groupName && match[2]) {
+                groupName = match[2];
+            }
+        }
+        if (!subject || !room) {
             return null;
         }
-        const subject = match[1];
-        const groupName = match[2];
         return {
             subject,
-            teacher,
+            ...(teacher ? { teacher } : {}),
             room,
             ...(groupName ? { groupName } : {}),
         };

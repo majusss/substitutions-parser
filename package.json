@@ -1,6 +1,6 @@
 {
   "name": "@majusss/substitutions-parser",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "VULCAN substitutions parser for JavaScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,8 +9,7 @@
   ],
   "scripts": {
     "build": "tsc --p tsconfig.build.json",
-    "test": "mocha --reporter spec --require ts-node/register test/**/*.ts",
-    "test:zstio": "mocha --reporter spec --require ts-node/register test/zstio.ts"
+    "test": "mocha --reporter spec --require ts-node/register test/**/*.ts"
   },
   "author": "Kacper Majcher <majchermajus@proton.me>",
   "repository": {

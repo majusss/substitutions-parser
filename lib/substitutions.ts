@@ -28,26 +28,47 @@ export default class Substitutions {
 
   private parseSubstituts(entry: string): LessonSubstitute | null {
     const parts = entry.trim().split(/\s+/);
-    const [room, teacher] = [parts.pop() || "", parts.pop() || ""];
-    const rawSubject = entry.slice(0, entry.lastIndexOf(teacher)).trim();
 
-    if (!rawSubject || !teacher || !room) {
-      return null;
+    let subjectWords: string[] = [];
+    let teacher: string | null = null;
+    let room: string | null = null;
+    let groupName: string | undefined;
+    let match: RegExpMatchArray | null;
+
+    const teacherRegex = /^\p{Lu}\p{L}$/u;
+    const roomRegex = /^(?:3[0-7]|[3-9]|[12][0-9]|W.*|G.*|WG.*)$/;
+    const groupNameRegex = /^-([\d/]+|[A-Z])$|^(\d+[A-Za-z]+)$/;
+
+    for (const word of parts) {
+      if (!teacher && teacherRegex.test(word)) {
+        teacher = word;
+      } else if (!room && roomRegex.test(word)) {
+        room = word;
+      } else if (!groupName && (match = word.match(groupNameRegex))) {
+        groupName = match[1] || match[2];
+      } else {
+        subjectWords.push(word);
+      }
     }
+
+    let subject = subjectWords.join(" ");
 
     const subjectRegex = /^(.+?)(?:-([\d/]+|[A-Z]))?$/;
-    const match = rawSubject.match(subjectRegex);
-
-    if (!match) {
-      return null;
+    match = subject.match(subjectRegex);
+    if (match) {
+      subject = match[1].trim();
+      if (!groupName && match[2]) {
+        groupName = match[2];
+      }
     }
 
-    const subject = match[1];
-    const groupName = match[2];
+    if (!subject || !room) {
+      return null;
+    }
 
     return {
       subject,
-      teacher,
+      ...(teacher ? { teacher } : {}),
       room,
       ...(groupName ? { groupName } : {}),
     };

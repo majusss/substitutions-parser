@@ -2,7 +2,7 @@ export interface LessonSubstitute {
     subject: string;
     room: string;
     groupName?: string;
-    teacher: string;
+    teacher?: string;
 }
 export interface Substitution {
     number: number;
